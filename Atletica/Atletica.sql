@@ -125,7 +125,7 @@ UPDATE Tecnico SET telefone = 11223344 WHERE nome = 'Carlos';
 #deletando registros
 DELETE FROM Inscricao WHERE id_evento = 1;
 DELETE FROM Venda WHERE id_produto = 1;
-#
+#fazendo pesquisas
 SELECT * FROM Membro WHERE endereco = 'Rua Nova, Nº 123';
 SELECT * FROM Evento WHERE data_evento > '2024-07-01';
 SELECT * FROM Produto WHERE preco < 30.00;
