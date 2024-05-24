@@ -70,3 +70,13 @@ FOREIGN KEY (id_time) REFERENCES time_(id),
 FOREIGN KEY (id_membro) REFERENCES membro(id),
 PRIMARY KEY (id_membro, id_time)
 );
+
+INSERT INTO membro(nome) VALUES ('Hitalo'), ('André'),('Gomes');
+INSERT INTO evento(nome) VALUES ('Amistoso contra Aniquiladores'),('Treino (futsal)'),('Treino (volei)');
+INSERT INTO time_(nome) VALUES ('time Futsal'),(' time Volei'),(' time futvolei');
+INSERT INTO produto(nome) VALUES ('Tirante'),('Uniforme futsal'),('Uniforme volei');
+INSERT INTO tecnico(nome) VALUES ('Ademir'),('Junim'),('Crodoaldo');
+INSERT INTO venda(id_membro) VALUES (3),(2),(2);
+INSERT INTO inscricao(id_membro) VALUES (1),(2),(3);
+INSERT INTO associacao_tecnica(id_tecnico, id_time) VALUES (1,1),(2,2),(3,3);
+INSERT INTO jogador(id_membro, id_time)VALUES (1,1),(2,2),(3,3);
